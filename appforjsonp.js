@@ -2,26 +2,39 @@ var player = document.getElementById('player');
 
 var button = document.getElementsByTagName('button')[0];
 
-var JSON;
+var switcher = document.getElementById('switch');
 
-function loadJSON(data) {   
+var main = document.getElementById('main');
 
-  JSON = data;
-  randomize();
-}
-   
-function randomize () {
+var JSONdata;
+
+function randomize() {
       
-    var num = Math.floor(Math.random()*278)
+    var num = Math.floor(Math.random() * 411);
       
-    var embedURL = JSON.parts[num].url.replace('watch?v=', 'embed/');
+    var embedURL = JSONdata.parts[num].url.replace('watch?v=', 'embed/');
     player.src = embedURL;
-      
-}             
+}
 
-button.addEventListener('click', randomize)
+function loadJSON(data) {
+
+    JSONdata = data;
+    randomize();
+}
+
+function flip() {
+    if (main.classList.contains('mirrored')) {
+        main.classList.remove('mirrored');
+    } else {
+        main.classList.add('mirrored');
+    }
+}
 
 var script = document.createElement('script');
-script.src = 'https://codepen.io/tantor/pen/geExWL.js?callback=loadJSON'
+script.src = 'https://codepen.io/tantor/pen/geExWL.js?callback=loadJSON';
 
 document.getElementsByTagName('head')[0].appendChild(script);
+
+button.addEventListener('click', randomize);
+
+switcher.addEventListener('click', flip);
