@@ -3,73 +3,48 @@
     padding:0;
 }
 
-h1, h3 {
-    margin-left:400px;
-    display:block;
-    color:antiquewhite;
-    font-family: 'Averia Libre', cursive;
+ h3 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    position:relative;
+    right:320px;
+    margin-top:10px;
+    color:grey;
 }
 
+.share {
+    margin-left:700px;
+    margin-top:-22px;
+}
+
+.tweet {
+    margin-top:-20px;
+    margin-left:640px;
+}
+
+
 body {
-    background-image: url('https://honeypotmarketing.com/wp-content/uploads/OLD-SCHOOL-TV.png');
+    background-image: url('badTV.png');
     background-repeat: no-repeat;
-    background-size:1050px;
-    background-position-y:50px;
+    background-size:860px;
+    background-position-y:-50px;
+    background-position-x:center;
     background-color:black;
 }
 
 .main {
-    display:inline-block;
-    margin-top:120px;
-    margin-left:110px;
-}
-
-.next , .switch {
-    background-color: #222;
-    display:block;
-    margin-left:924px;
-    color:antiquewhite;
-    border-radius:50%;
-    font-family: 'Averia Libre', cursive;
-    font-size:.8em;
-    cursor:pointer;
-    height:65px;
-    width:60px;
-}
-
-.next {
-    font-size: 1.2em;
-    margin-top:-155px;
-    margin-bottom:63px;
-}
-
-.options {
-    margin-top:20px;
-    text-align:center;
-}
-
-.sidebar {
-    margin-top:-540px;
-    margin-left:850px;
+    margin-top:60px;
+    text-align: center;
 }
 
 .mirrored {-webkit-transform: scaleX(-1);} 
 
-.share , .tweet {
-    display: inline-block;
+.imgLogo {
+    border:2px #444 inset;
+    padding:2px;
+    margin-top:48px;
+    margin-left:46%;
+    width:70px;
 }
 
-.tweet {
-   position:absolute;
-}
-
-.share {
-    margin
-}
-
-@media only screen and (max-width: 625px) {
-    
-    h1, h3 {
-        margin-left:10%;
-    }
-}
