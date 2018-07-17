@@ -1,4 +1,4 @@
-{"parts":[{"name":"Indy's No Meat Pies, No Glory! Video", "url":"https://www.youtube.com/watch?v=PdK1r97tXNY"}
+loadJSON({"parts":[{"name":"Indy's No Meat Pies, No Glory! Video", "url":"https://www.youtube.com/watch?v=PdK1r97tXNY"}
     ,{"name":"éS X DGK", "url":"https://www.youtube.com/watch?v=pQSESowZMPE"}
     ,{"name":"Chomp On This - Europe Hags", "url":"https://www.youtube.com/watch?v=sNURuuo1FqM"}
     ,{"name":"Flip ams - 411#30 (1998)", "url":"https://www.youtube.com/watch?v=fEGJ13SA0OE"}
@@ -8884,4 +8884,4 @@
     ,{"name":"Sugar Detour", "url":"https://www.youtube.com/watch?v=otDZD2lsflI"}
     ,{"name":"The Good Life : Westside Skateshop Video #4", "url":"https://www.youtube.com/watch?v=SKycWmaRKS8"}
 
-]}
+] })

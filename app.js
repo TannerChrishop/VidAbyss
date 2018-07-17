@@ -8,6 +8,8 @@ var main = document.getElementById('main');
 
 var JSONdata;
 
+var testnum = 0;
+
 function randomize() {
       
     var num = Math.floor(Math.random() * 411);
@@ -27,7 +29,6 @@ function loadJSON() {
             
             var x = JSON.parse(xobj.responseText);
             JSONdata = x;
-            randomize();
         }
     };
     xobj.send();
@@ -41,8 +42,14 @@ function flip() {
     }
 }
 
+function tester () {
+     var embedURL = JSONdata.parts[testnum].url.replace('watch?v=', 'embed/');
+    player.src = embedURL;
+    testnum++;
+}
+
 loadJSON();
 
-button.addEventListener('click', randomize);
+button.addEventListener('click', tester);
 
-switcher.addEventListener('click', flip);
+//switcher.addEventListener('click', flip);
